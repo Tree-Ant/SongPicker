@@ -51,14 +51,274 @@ const songTITLES1 = [
 ];
 
 const songTITLES2 = [
-  {
-    title: "song2",
-    artist: "artist2",
-  },
-  {
-    title: "song2b",
-    artist: "artist2b",
-  },
+    {
+        title:  "across the universe",
+        artist: "beatles"
+        },
+        {
+        title:  "ain't no sunshine",
+        artist: "bill withers"
+        },
+        {
+        title:  "allison",
+        artist: "elvis costello"
+        },
+        {
+        title:  "dock of the bay",
+        artist: "otis redding"
+        },
+        {
+        title:  "don't let me down",
+        artist: "beatles"
+        },
+        {
+        title:  "either way",
+        artist: "wilco"
+        },
+        {
+        title:  "feels like rain",
+        artist: "buddy guy"
+        },
+        {
+        title:  "fire and rain",
+        artist: "james taylor"
+        },
+        {
+        title:  "flesh no. 1 beetle dennis",
+        artist: "robyn Hitchcock & the egyptians"
+        },
+        {
+        title:  "fly me to the moon",
+        artist: "frank sinatra"
+        },
+        {
+        title:  "fool on the hill",
+        artist: "beatles"
+        },
+        {
+        title:  "get down on it",
+        artist: "kool & the gang"
+        },
+        {
+        title:  "gimme some loving / i'm a believer",
+        artist: "steve winwood / monkees"
+        },
+        {
+        title:  "glad & sorry",
+        artist: "faces"
+        },
+        {
+        title:  "golden lady",
+        artist: "stevie wonder"
+        },
+        {
+        title:  "gravity",
+        artist: "john mayer"
+        },
+        {
+        title:  "hallelujah",
+        artist: "leonard cohen"
+        },
+        {
+        title:  "heard it through the grapevine",
+        artist: "marvin gaye/CCR"
+        },
+        {
+        title:  "hey jude",
+        artist: "beatles"
+        },
+        {
+        title:  "how deep is your love",
+        artist: "bee gees"
+        },
+        {
+        title:  "how long",
+        artist: "ace"
+        },
+        {
+        title:  "i got a woman",
+        artist: "ray charles"
+        },
+        {
+        title:  "i shall be released",
+        artist: "the band"
+        },
+        {
+        title:  "i'd rather go blind",
+        artist: "etta james"
+        },
+        {
+        title:  "in my life",
+        artist: "beatles"
+        },
+        {
+        title:  "in repair",
+        artist: "john mayer"
+        },
+        {
+        title:  "in your atmosphere",
+        artist: "john mayer"
+        },
+        {
+        title:  "into the mystic",
+        artist: "van morrison"
+        },
+        {
+        title:  "just the two of us",
+        artist: "bill withers"
+        },
+        {
+        title:  "lean on me",
+        artist: "bill withers"
+        },
+        {
+        title:  "let's stay together",
+        artist: "al green"
+        },
+        {
+        title:  "living for the city",
+        artist: "stevie wonder"
+        },
+        {
+        title:  "lodi",
+        artist: "ccr"
+        },
+        {
+        title:  "long as i can see the light",
+        artist: "ccr"
+        },
+        {
+        title:  "lousiana 1927",
+        artist: "randy newman"
+        },
+        {
+        title:  "love & happiness",
+        artist: "al green"
+        },
+        {
+        title:  "the long and winding road",
+        artist: "beatles"
+        },
+        {
+        title:  "make you feel my love",
+        artist: "bob dylan"
+        },
+        {
+        title:  "maybe i'm amazed",
+        artist: "paul mccartney"
+        },
+        {
+        title:  "my girl",
+        artist: "temptations"
+        },
+        {
+        title:  "my way",
+        artist: "frank sinatra"
+        },
+        {
+        title:  "oh darling",
+        artist: "beatles"
+        },
+        {
+        title:  "passenger seat",
+        artist: "death cab for cutie"
+        },
+        {
+        title:  "pearl of the quarter",
+        artist: "steely dan"
+        },
+        {
+        title:  "peg",
+        artist: "steely dan"
+        },
+        {
+        title:  "people are strange",
+        artist: "doors"
+        },
+        {
+        title:  "photobooth",
+        artist: "death cab for cutie" 
+        },
+        {
+        title:  "proud mary",
+        artist: "ccr"
+        },
+        {
+        title:  "riders on the storm",
+        artist: "doors"
+        },
+        {
+        title:  "rikki don't lose that number",
+        artist: "steely dan"
+        },
+        {
+        title:  "sara smile",
+        artist: "hall & oates"
+        },
+        {
+        title:  "secret o life",
+        artist: "james taylor"
+        },
+        {
+        title:  "slow dancing in a burning room",
+        artist: "john mayer"
+        },
+        {
+        title:  "still",
+        artist: "ben folds"
+        },
+        {
+        title:  "still crazy after all these years",
+        artist: "paul simon"
+        },
+        {
+        title:  "such a night",
+        artist: "dr john"
+        },
+        {
+        title:  "takin it to the streets",
+        artist: "michael mcdonald/doobies"
+        },
+        {
+        title:  "tell me why",
+        artist: "neil young"
+        },
+        {
+        title:  "that's how i got to Memphis",
+        artist: "tom hall"
+        },
+        {
+        title:  "let's get it on",
+        artist: "marvin gaye" 
+        },
+        {
+        title:  "valerie",
+        artist: "steve winwood"
+        },
+        {
+        title:  "war of my life",
+        artist: "john mayer"
+        },
+        {
+        title:  "who's gonna save my soul?",
+        artist: "gnarls barkley"
+        },
+        {
+        title:  "will the circle be unbroken?",
+        artist: "traditional"
+        },
+        {
+        title:  "wind cries mary",
+        artist: "jimi hendrix"
+        },
+        {
+        title:  "with or without you",
+        artist: "u2"
+        },
+        {
+        title:  "you really got a hold on me",
+        artist: "smokey robinson"
+        }
 ];
 
 const songTITLES3 = [
@@ -66,22 +326,25 @@ const songTITLES3 = [
         title:  "Auld lang syne",
         artist: "traditional"
         },
+
         {
         title:  "This Christmas",
         artist: "Donny Hathaway"
         },
+
         {
         title:  "I think we killed santa",
         artist: "luckyhalfspeed original!"
         },
+
         {
         title:  "Where ya gonna go after Christmas",
         artist: "Robert Ledet/dirty santa"
-        },
-        {
+    },
+    {
         title:  "Finally here",
         artist: "grip johnson"
-        },
+    },
         {
         title:  "Santa claus is coming to town",
         artist: "traditional"
@@ -165,12 +428,6 @@ listMAKER = () => {
   }
   console.log(usedSongTITLES);
 };
-
-// goEL.addEventListener("click", function () {
-//     spin();
-//     listMAKER();
-
-// });
 
 listSUBMITEL.addEventListener("click", function () {
   usedSongTITLES.length = 0;
