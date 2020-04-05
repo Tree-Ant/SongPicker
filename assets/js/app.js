@@ -44,10 +44,67 @@ const songTITLES = [
 const usedSongTITLES = [];
 
 const songTITLES1 = [
-  {
-    title: "song1",
-    artist: "artist1",
-  },
+    {
+        title:  "autum leaves",
+        artist: "standard"
+        },
+        {
+        title:  "blame it on my youth",
+        artist: "Jamie cullum"
+        },
+        {
+        title:  "Blue in green",
+        artist: "miles davis"
+        },
+        {
+        title:  "come fly with me",
+        artist: "frank sinatra"
+        },
+        {
+        title:  "everybody loves somebody",
+        artist: "dean martin"
+        },
+        {
+        title:  "i can't get started with you",
+        artist: "jamie cullum"
+        },
+        {
+        title:  "in the wee small hours of the morning",
+        artist: "frank sinatra"
+        },
+        {
+        title:  "my favorite things",
+        artist: "john coltrane"
+        },
+        {
+        title:  "my funny valentine",
+        artist: "chet baker"
+        },
+        {
+        title:  "pure imagination",
+        artist: "jamie cullum"
+        },
+        {
+        title:  "rainy night in georgia",
+        artist: "brooke benton"
+        },
+        {
+        title:  "round midnight",
+        artist: "carmen mcrae"
+        },
+        {
+        title:  "strangers in the night",
+        artist: "frank sinatra"
+        },
+        {
+        title:  "the way you look tonight",
+        artist: "tony bennnett"
+        },
+        {
+        title:  "what a difference a day made",
+        artist: "jamie cullum"
+        }
+        
 ];
 
 const songTITLES2 = [
@@ -385,10 +442,8 @@ selector = () => {
   var songPICK = Math.floor(Math.random() * 6);
   randomNUMEL.innerHTML = songPICK;
 
-  titleEL.style.fontSize = "0vh";
-  titleEL.innerHTML = songTITLES[songPICK].title;
-  titleEL.style.fontSize = "15vh";
-  artistEL.innerHTML = songTITLES[songPICK].artist;
+  titleEL.innerHTML = usedSongTITLES[songPICK].title;
+  artistEL.innerHTML = usedSongTITLES[songPICK].artist;
 
   var colorPICK = Math.floor(Math.random() * 3);
 
