@@ -1,36 +1,92 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .whole {
     margin: 0;
-    background-color: blue;
+    background-color: black;
     width: 100vw;
     height: 100vh;
 }
 
-.mainCard {
-    width: 80vw;
-    height: 80vh;
-    border: solid 10px black;
+#tvset {
+    margin: 0;
+    z-index: 2;
+    width: 120vw;
+    height: 100vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+#tvstatic {
+    margin: 0;
+    z-index: 1;
+    width: 240vw;
+    height: 200vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    clip: rect(50%, 50%, -50%, 50%);
+}
+
+.mainCard {
+    width: 80vw;
+    height: 80vh;
+    /* border: solid 10px black; */
+    background-color: black;
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
 .TITLE {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 15vh;
+    color: white;
 
 }
 
 .ARTIST {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    font-size: 8vh;
+    color: white;
+
+}
+
+.checks {
+    margin: 5%;
+}
+
+.CheckFORM {
+    z-index: 0;
+    display: none;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    background-color: blue;
+}
+
+.show {
+    display:block;
+}
+
+#listSUBMIT {
+    float: right;
 }

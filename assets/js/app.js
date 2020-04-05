@@ -3,6 +3,15 @@ var artistEL = document.querySelector('.ARTIST');
 var randomNUMEL = document.querySelector('.randomNUM');
 var goEL = document.querySelector('.GO');
 var wholeEL = document.querySelector('.whole');
+var checkFORMEL = document.querySelector('.CheckFORM');
+var listSUBMITEL = document.querySelector('#listSUBMIT');
+var mainCardEL = document.querySelector('.mainCard');
+var tvscreenEL = document.querySelector('#tvscreen');
+
+
+var songList1EL = document.querySelector('#songList1');
+var songList2EL = document.querySelector('#songList2');
+var songList3EL = document.querySelector('#songList3');
 
 
 const colors = ['blue', 'green', 'orange']
@@ -86,7 +95,7 @@ selector = () => {
 
     var colorPICK = Math.floor(Math.random() * 3);
 
-    wholeEL.style.backgroundColor = colors[colorPICK];
+    mainCardEL.style.backgroundColor = colors[colorPICK];
 
         if (spinCOUNT <= spinMAX) {
             spinCOUNT++;
@@ -97,7 +106,59 @@ selector = () => {
         }
 }; 
 
-goEL.addEventListener("click", function () {
-    spin();
+
+listMAKER = () => {
+   console.log(songList1EL.checked);
+   if (songList1EL.checked === true) {
+       for (let i = 0; i < songTITLES1.length; i++) {
+           usedSongTITLES.push(songTITLES1[i]);
+       } 
+    } else {
+        console.log('fail-1')
+    }
+   if (songList2EL.checked === true) {
+    for (let i = 0; i < songTITLES2.length; i++) {
+        usedSongTITLES.push(songTITLES2[i]);
+    } 
+    } else {
+        console.log('fail-2')
+    }
+    if (songList3EL.checked === true) {
+        for (let i = 0; i < songTITLES3.length; i++) {
+            usedSongTITLES.push(songTITLES3[i]);
+        } 
+    }else {
+        console.log('fail-3')
+    }
+    console.log(usedSongTITLES);
+
+}
+
+
+// goEL.addEventListener("click", function () {
+//     spin();
+//     listMAKER();
+
+// });
+
+listSUBMITEL.addEventListener("click", function () {
+    usedSongTITLES.length = 0;
+    listMAKER();
+
 });
 
+
+document.addEventListener('keydown', function () {
+    function keyCode(event) {
+        var x = event.keyCode;
+        if (x == 32) {
+            spin();
+        } else if (x == 9) {
+            checkFORMEL.classList.toggle("show");
+
+        } 
+              
+    }
+
+    keyCode(event);
+});
