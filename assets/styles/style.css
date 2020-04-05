@@ -1,6 +1,13 @@
+@font-face {
+    src: url(../fonts/VCR_OSD_MONO_1.001.ttf);
+    font-family: VCR;
+
+}
+
 body {
     margin: 0;
     overflow: hidden;
+    font-family: VCR;
 }
 
 .whole {
@@ -36,6 +43,7 @@ body {
 .mainCard {
     width: 80vw;
     height: 80vh;
+    z-index: 2;
     /* border: solid 10px black; */
     background-color: black;
     z-index: 0;
@@ -52,15 +60,40 @@ body {
     transform: translate(-50%, -50%);
     font-size: 15vh;
     color: white;
-
+    transition: font-size 1s ;
+    /* animation-name: channel;
+    animation-duration: 10s; */
 }
+
+/* @keyframes channel {
+    0%    {font-size: 0vh;}
+    5%    {font-size: 15vh;}
+    10%   {font-size: 0vh}
+    15%   {font-size: 15vh}
+    20%   {font-size: 0vh;}
+    25%   {font-size: 15vh;}
+    30%   {font-size: 0vh;}
+    35%   {font-size: 15vh;}
+    40%   {font-size: 0vh;}
+    45%   {font-size: 15vh;}
+    50%   {font-size: 0vh;}
+    55%   {font-size: 15vh;}
+    60%   {font-size: 0vh;}
+    65%   {font-size: 15vh;}
+    70%   {font-size: 0vh;}
+    75%   {font-size: 15vh;}
+    80%   {font-size: 0vh;}
+    85%   {font-size: 15vh;}
+    90%   {font-size: 0vh;}
+    95%   {font-size: 15vh;}
+    100% {font-size: 0vh;}
+  } */
 
 .ARTIST {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-size: 8vh;
     color: white;
 
@@ -68,6 +101,8 @@ body {
 
 .checks {
     margin: 5%;
+    height: 5vh;
+    width: 5vh;
 }
 
 .CheckFORM {
@@ -77,10 +112,14 @@ body {
     height: 80vh;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 46%;
     transform: translate(-50%, -50%);
-    border: 5px solid black;
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    font-size: 10vh;
+    font-family: VCR;
+    z-index: 3;
+
 }
 
 .show {
@@ -88,5 +127,15 @@ body {
 }
 
 #listSUBMIT {
-    float: right;
+    text-align: center;
+    font-size: 5vh;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    position: absolute;
+    top: 80%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    border: solid white 5px;
+
 }

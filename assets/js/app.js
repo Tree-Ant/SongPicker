@@ -78,7 +78,7 @@ const usedSongLISTs = ['songTITLES3', 'songTITLES1', 'songTITLES2'];
 
 spin = () => {
 
-    setTimeout(selector, 100);
+    setTimeout(selector, 1000);
 
 };
 
@@ -90,7 +90,7 @@ selector = () => {
     var songPICK = Math.floor(Math.random() * 6);   
     randomNUMEL.innerHTML = songPICK;   
     
-    titleEL.innerHTML = songTITLES[songPICK].title;
+    titleEL.innerHTML = songTITLES[songPICK].title;     
     artistEL.innerHTML = songTITLES[songPICK].artist
 
     var colorPICK = Math.floor(Math.random() * 3);
@@ -153,8 +153,17 @@ document.addEventListener('keydown', function () {
         var x = event.keyCode;
         if (x == 32) {
             spin();
+            checkFORMEL.style.zIndex = 0;
+            checkFORMEL.style.opacity = 0;
+
         } else if (x == 9) {
             checkFORMEL.classList.toggle("show");
+            checkFORMEL.style.zIndex = 3;
+            checkFORMEL.style.opacity = 1;
+
+            mainCardEL.style.backgroundColor = 'blue';
+            titleEL.innerHTML = "";
+            artistEL.innerHTML = "";
 
         } 
               
