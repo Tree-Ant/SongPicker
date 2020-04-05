@@ -1,22 +1,45 @@
-"Auld lang syne"
-"traditional"
-“This Christmas”
-“Donny Hathaway”
-“I think we killed santa”
-“luckyhalfspeed original!”
-“Where ya gonna go after Christmas”
-“Robert Ledet/dirty santa”
-“Finally here”
-“grip johnson”
-“Santa claus is coming to town”
-“traditional”
-“Christmastime is here”
-“vince guaraldi”
-“peanuts medley”
-“vince guaraldi”
-“mele kalikimaka”
-“bing Crosby”
-“also sprach zathursa 2001”
-“Richard strauss”
-“wonderful christmastime”
-“paul mccartney”	
+{
+title:  "Auld lang syne"
+artist: "traditional"
+}
+{
+title:  “This Christmas”
+artist: “Donny Hathaway”
+}
+{
+title:  “I think we killed santa”
+artist: “luckyhalfspeed original!”
+}
+{
+title:  “Where ya gonna go after Christmas”
+artist: “Robert Ledet/dirty santa”
+}
+{
+title:  “Finally here”
+artist: “grip johnson”
+}
+{
+title:  “Santa claus is coming to town”
+artist: “traditional”
+}
+{
+title:  “Christmastime is here”
+artist: “vince guaraldi”
+}
+{
+title:  “peanuts medley”
+artist: “vince guaraldi”
+}
+{
+title:  “mele kalikimaka”
+artist: “bing Crosby”
+}
+{
+title:  “also sprach zathursa 2001”
+artist: “Richard strauss”
+}
+{
+title:  “wonderful christmastime”
+artist: “paul mccartney”	
+}
+
