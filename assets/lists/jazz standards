@@ -1,30 +1,60 @@
-"autum leaves"
-"standard"
-"blame it on my youth"
-"Jamie cullum"
-"Blue in green"
-"miles davis"
-"come fly with me"
-"frank sinatra"
-"everybody loves somebody"
-"dean martin"
-"i can't get started with you"
-"jamie cullum"
-"in the wee small hours of the morning"
-"frank sinatra"
-"my favorite things"
-"john coltrane"
-"my funny valentine"
-"chet baker"
-"pure imagination"
-"jamie cullum"
-"rainy night in georgia"
-"brooke benton"
-"round midnight"
-"carmen mcrae"
-"strangers in the night"
-"frank sinatra"
-"the way you look tonight"
-"tony bennnett"
-"what a difference a day made"
-"jamie cullum"
+{
+title:  "autum leaves"
+artist: "standard"
+},
+{
+title:  "blame it on my youth"
+artist: "Jamie cullum"
+},
+{
+title:  "Blue in green"
+artist: "miles davis"
+},
+{
+title:  "come fly with me"
+artist: "frank sinatra"
+},
+{
+title:  "everybody loves somebody"
+artist: "dean martin"
+},
+{
+title:  "i can't get started with you"
+artist: "jamie cullum"
+},
+{
+title:  "in the wee small hours of the morning"
+artist: "frank sinatra"
+},
+{
+title:  "my favorite things"
+artist: "john coltrane"
+},
+{
+title:  "my funny valentine"
+artist: "chet baker"
+},
+{
+title:  "pure imagination"
+artist: "jamie cullum"
+},
+{
+title:  "rainy night in georgia"
+artist: "brooke benton"
+},
+{
+title:  "round midnight"
+artist: "carmen mcrae"
+},
+{
+title:  "strangers in the night"
+artist: "frank sinatra"
+},
+{
+title:  "the way you look tonight"
+artist: "tony bennnett"
+},
+{
+title:  "what a difference a day made"
+artist: "jamie cullum"
+}
