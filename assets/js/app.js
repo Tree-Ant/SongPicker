@@ -14,7 +14,7 @@ var songList2EL = document.querySelector('#songList2');
 var songList3EL = document.querySelector('#songList3');
 
 
-const colors = ['blue', 'green', 'orange']
+const colors = ['blue', 'green', 'orange'];
 
 const songTITLES = 
     [
@@ -51,7 +51,7 @@ const songTITLES1 =
         {
             title: "song1",
             artist: 'artist1'
-        }
+        },
     ];
 
 const songTITLES2 = 
@@ -69,9 +69,50 @@ const songTITLES2 =
 const songTITLES3 = 
     [
         {
-            title: 'song3',
-            artist: 'artist3'
-        }
+            title:  "Auld lang syne",
+            artist: "traditional"
+            },
+            {
+            title:  "This Christmas",
+            artist: "Donny Hathaway"
+            },
+            {
+            title:  "I think we killed santa",
+            artist: "luckyhalfspeed original!"
+            },
+            {
+            title:  "Where ya gonna go after Christmas",
+            artist: "Robert Ledet/dirty santa"
+            },
+            {
+            title:  "Finally here",
+            artist: "grip johnson"
+            },
+            {
+            title:  "Santa claus is coming to town",
+            artist: "traditional"
+            },
+            {
+            title:  "Christmastime is here",
+            artist: "vince guaraldi"
+            },
+            {
+            title:  "peanuts medley",
+            artist: "vince guaraldi"
+            },
+            {
+            title:  "mele kalikimaka",
+            artist: "bing Crosby"
+            },
+            {
+            title:  "also sprach zathursa 2001",
+            artist: "Richard strauss"
+            },
+            {
+            title:  "wonderful christmastime",
+            artist: "paul mccartney"	
+            }
+            
     ]; 
 
 const usedSongLISTs = ['songTITLES3', 'songTITLES1', 'songTITLES2'];
@@ -90,7 +131,9 @@ selector = () => {
     var songPICK = Math.floor(Math.random() * 6);   
     randomNUMEL.innerHTML = songPICK;   
     
-    titleEL.innerHTML = songTITLES[songPICK].title;     
+    titleEL.style.fontSize = '0vh'; 
+    titleEL.innerHTML = songTITLES[songPICK].title;
+    titleEL.style.fontSize = '15vh';
     artistEL.innerHTML = songTITLES[songPICK].artist
 
     var colorPICK = Math.floor(Math.random() * 3);
