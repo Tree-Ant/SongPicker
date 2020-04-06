@@ -4,10 +4,15 @@ var randomNUMEL = document.querySelector(".randomNUM");
 var goEL = document.querySelector(".GO");
 var wholeEL = document.querySelector(".whole");
 var checkFORMEL = document.querySelector(".CheckFORM");
-var listSUBMITEL = document.querySelector("#listSUBMIT");
 var mainCardEL = document.querySelector(".mainCard");
 var tvscreenEL = document.querySelector("#tvscreen");
 var BGsEL = document.querySelector("#BG");
+
+var listSUBMITEL = document.querySelector("#listSUBMIT");
+var settingsEL = document.querySelector("#settings");
+var channelChangeEL = document.querySelector("#changeChannel");
+
+
 
 var songList1EL = document.querySelector("#songList1");
 var songList2EL = document.querySelector("#songList2");
@@ -555,6 +560,24 @@ listSUBMITEL.addEventListener("click", function () {
   checkFORMEL.style.opacity = 0;
   listMAKER();
 });
+
+channelChangeEL.addEventListener("click", function () {
+    spin();
+      checkFORMEL.style.zIndex = 0;
+      checkFORMEL.style.opacity = 0;
+  });
+
+settingsEL.addEventListener("click", function () {
+    BGsEL.setAttribute("src", "./assets/imgs/BGs/straightblue.jpg");
+    checkFORMEL.classList.toggle("show");
+    checkFORMEL.style.zIndex = 8;
+    checkFORMEL.style.opacity = 1;
+
+    wholeEL.style.backgroundColor = "blue";
+    titleEL.innerHTML = "";
+    artistEL.innerHTML = "";
+  });
+  
 
 document.addEventListener("keydown", function () {
   function keyCode(event) {

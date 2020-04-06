@@ -17,13 +17,14 @@ body {
     background-color: black;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 #tvset {
     margin: 0;
     z-index: 7;
-    width: 175vw;
-    height: 175vh;
+    width: 175%;
+    height: 175%;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -33,8 +34,8 @@ body {
 }
 
 @keyframes movement {
-    from {width: 100vw; height: 100vh; top: 50%}
-    to {width: 175vw; height: 175vh; top: 40%}
+    from {width: 100%; height: 100%; top: 50%}
+    to {width: 175%; height: 175%; top: 40%}
   }
 
 #tvstatic {
@@ -143,5 +144,28 @@ body {
     position: absolute;
     top: 49%;
     left: 42%;
+    transform: translate(-50%, -50%);
+}
+
+#changeChannel {
+    z-index: 10;
+    opacity: 0;
+
+    width: 9vw;
+    height: 12vh;
+    position: absolute;
+    top: 10%;
+    left: 80.5%;
+    transform: translate(-50%, -50%);
+}
+
+#settings {
+    z-index: 10;
+    opacity: 0;
+    width: 8vw;
+    height: 12vh;
+    position: absolute;
+    top: 77%;
+    left: 62%;
     transform: translate(-50%, -50%);
 }
