@@ -8,7 +8,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: VCR;
-    text-shadow: 5px 5px #FF0000;
+    text-shadow: 8px 8px red;
 
 }
 
@@ -22,13 +22,20 @@ body {
 #tvset {
     margin: 0;
     z-index: 7;
-    width: 120vw;
-    height: 100vh;
+    width: 175vw;
+    height: 175vh;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation-name: movement;
+    animation-duration: 4s;
 }
+
+@keyframes movement {
+    from {width: 100vw; height: 100vh; top: 50%}
+    to {width: 175vw; height: 175vh; top: 40%}
+  }
 
 #tvstatic {
     margin: 0;
@@ -70,7 +77,7 @@ body {
     text-align: center;
     width: 80%;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 8vh;
@@ -81,7 +88,7 @@ body {
     text-align: center;
     width: 80%;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vh;
@@ -90,7 +97,7 @@ body {
 }
 
 .checks {
-    margin: 4%;
+    margin: 2%;
     height: 5vh;
     width: 5vh;
     z-index: 8;
@@ -99,15 +106,15 @@ body {
 .CheckFORM {
     z-index: 6;
     display: none;
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 84vh;
     position: absolute;
-    top: 50%;
-    left: 46%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
     color: whitesmoke;
-    font-size: 5vh;
+    font-size: 4vh;
     font-family: VCR;
 }
 
@@ -122,8 +129,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: whitesmoke;
     position: absolute;
-    top: 80%;
-    left: 38%;
+    top: 70%;
+    left: 35%;
     transform: translate(-50%, -50%);
     border: solid white 5px;
 
@@ -131,10 +138,10 @@ body {
 
 .box {
     border: solid red 5px;
-    width: 67vw;
+    width: 60vw;
     height: 84vh;
     position: absolute;
-    top: 46%;
-    left: 37%;
+    top: 49%;
+    left: 42%;
     transform: translate(-50%, -50%);
 }
