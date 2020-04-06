@@ -8,6 +8,10 @@ var mainCardEL = document.querySelector(".mainCard");
 var tvscreenEL = document.querySelector("#tvscreen");
 var BGsEL = document.querySelector("#BG");
 
+var ding3EL = document.querySelector("#ding3");
+
+
+
 var listSUBMITEL = document.querySelector("#listSUBMIT");
 var settingsEL = document.querySelector("#settings");
 var channelChangeEL = document.querySelector("#changeChannel");
@@ -954,13 +958,12 @@ selector = () => {
   var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
   randomNUMEL.innerHTML = songPICK;
 
+  playAudio();
+
   titleEL.innerHTML = usedSongTITLES[songPICK].title;
   artistEL.innerHTML = usedSongTITLES[songPICK].artist;
-
   var bgPICK = Math.floor(Math.random() * BGs.length);
 
-  //   mainCardEL.style.backgroundImage = 'url(BGs[bgPICK])';
-  console.log(BGs[bgPICK]);
   BGsEL.setAttribute("src", BGs[bgPICK]);
 
   if (spinCOUNT <= spinMAX) {
@@ -973,9 +976,16 @@ selector = () => {
   }
 };
 
+
+playAudio = () => { 
+  ding3EL.play(); 
+} 
+
 onTWO = () => {
     var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
   randomNUMEL.innerHTML = songPICK;
+
+  playAudio();
 
   titleEL.innerHTML = usedSongTITLES[songPICK].title;
   artistEL.innerHTML = usedSongTITLES[songPICK].artist;
@@ -992,6 +1002,8 @@ onTHREE = () => {
     var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
     randomNUMEL.innerHTML = songPICK;
   
+    playAudio();
+
     titleEL.innerHTML = usedSongTITLES[songPICK].title;
     artistEL.innerHTML = usedSongTITLES[songPICK].artist;
   

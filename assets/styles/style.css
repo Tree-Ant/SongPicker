@@ -117,6 +117,7 @@ body {
     color: whitesmoke;
     font-size: 4vh;
     font-family: VCR;
+    text-shadow: 3px 3px red;
 }
 
 .show {
