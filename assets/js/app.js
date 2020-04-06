@@ -968,9 +968,39 @@ selector = () => {
     spin();
   } else {
     spinCOUNT = 0;
+    setTimeout(onTWO, 300)
     console.log("DONE");
   }
 };
+
+onTWO = () => {
+    var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
+  randomNUMEL.innerHTML = songPICK;
+
+  titleEL.innerHTML = usedSongTITLES[songPICK].title;
+  artistEL.innerHTML = usedSongTITLES[songPICK].artist;
+
+  var bgPICK = Math.floor(Math.random() * BGs.length);
+
+  //   mainCardEL.style.backgroundImage = 'url(BGs[bgPICK])';
+  console.log(BGs[bgPICK]);
+  BGsEL.setAttribute("src", BGs[bgPICK]);
+  setTimeout(onTHREE, 600);
+}
+
+onTHREE = () => {
+    var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
+    randomNUMEL.innerHTML = songPICK;
+  
+    titleEL.innerHTML = usedSongTITLES[songPICK].title;
+    artistEL.innerHTML = usedSongTITLES[songPICK].artist;
+  
+    var bgPICK = Math.floor(Math.random() * BGs.length);
+  
+    //   mainCardEL.style.backgroundImage = 'url(BGs[bgPICK])';
+    console.log(BGs[bgPICK]);
+    BGsEL.setAttribute("src", BGs[bgPICK]);
+}
 
 listMAKER = () => {
   console.log(songList1EL.checked);
