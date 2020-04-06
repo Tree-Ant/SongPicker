@@ -550,9 +550,8 @@ listMAKER = () => {
       usedSongTITLES.push(songTITLES4[i]);
     }
   } else {
-    console.log("fail-3");
+    console.log("fail-4");
   }
-  console.log(usedSongTITLES);
 };
 
 listSUBMITEL.addEventListener("click", function () {
