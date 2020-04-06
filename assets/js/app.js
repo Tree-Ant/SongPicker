@@ -7,12 +7,29 @@ var checkFORMEL = document.querySelector(".CheckFORM");
 var listSUBMITEL = document.querySelector("#listSUBMIT");
 var mainCardEL = document.querySelector(".mainCard");
 var tvscreenEL = document.querySelector("#tvscreen");
+var BGsEL = document.querySelector("#BG");
 
 var songList1EL = document.querySelector("#songList1");
 var songList2EL = document.querySelector("#songList2");
 var songList3EL = document.querySelector("#songList3");
 
-const colors = ["blue", "green", "orange"];
+const BGs = 
+[
+    "./assets/imgs/BGs/beer.jpg", 
+    "./assets/imgs/BGs/camera.jpg ", 
+    "./assets/imgs/BGs/contractor.jpg", 
+    "./assets/imgs/BGs/corn.jpg ", 
+    "./assets/imgs/BGs/fireplace.jpg ", 
+    "./assets/imgs/BGs/footballplayer.jpg ", 
+    "./assets/imgs/BGs/garbage.jpg ", 
+    "./assets/imgs/BGs/hammond.jpg", 
+    "./assets/imgs/BGs/harold.jpg ", 
+    "./assets/imgs/BGs/hatchet.jpg ", 
+    "./assets/imgs/BGs/hotdog.jpg", 
+    "./assets/imgs/BGs/regulardog.jpg", 
+    "./assets/imgs/BGs/sax.jpg", 
+    "./assets/imgs/BGs/watch.jpg "
+];
 
 const songTITLES = [
   {
@@ -445,9 +462,11 @@ selector = () => {
   titleEL.innerHTML = usedSongTITLES[songPICK].title;
   artistEL.innerHTML = usedSongTITLES[songPICK].artist;
 
-  var colorPICK = Math.floor(Math.random() * 3);
+  var bgPICK = Math.floor(Math.random() * 14);
 
-  mainCardEL.style.backgroundColor = colors[colorPICK];
+//   mainCardEL.style.backgroundImage = 'url(BGs[bgPICK])';
+console.log(BGs[bgPICK]);
+  BGsEL.setAttribute("src", BGs[bgPICK]);
 
   if (spinCOUNT <= spinMAX) {
     spinCOUNT++;
@@ -498,10 +517,10 @@ document.addEventListener("keydown", function () {
       checkFORMEL.style.opacity = 0;
     } else if (x == 9) {
       checkFORMEL.classList.toggle("show");
-      checkFORMEL.style.zIndex = 3;
+      checkFORMEL.style.zIndex = 8;
       checkFORMEL.style.opacity = 1;
-
-      mainCardEL.style.backgroundColor = "blue";
+        
+      wholeEL.style.backgroundColor = "blue";
       titleEL.innerHTML = "";
       artistEL.innerHTML = "";
     }
@@ -509,3 +528,5 @@ document.addEventListener("keydown", function () {
 
   keyCode(event);
 });
+
+listMAKER();

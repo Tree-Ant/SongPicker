@@ -8,6 +8,8 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: VCR;
+    text-shadow: 2px 2px #FF0000;
+
 }
 
 .whole {
@@ -19,7 +21,7 @@ body {
 
 #tvset {
     margin: 0;
-    z-index: 2;
+    z-index: 7;
     width: 120vw;
     height: 100vh;
     position: absolute;
@@ -30,7 +32,7 @@ body {
 
 #tvstatic {
     margin: 0;
-    z-index: 1;
+    z-index: 5;
     width: 240vw;
     height: 200vh;
     position: absolute;
@@ -41,23 +43,34 @@ body {
 }
 
 .mainCard {
-    width: 80vw;
-    height: 80vh;
-    z-index: 0;
-    border: solid 10px black;
-    background-color: black;
+    width: 64vw;
+    height: 46vw;
+    z-index: 4;
+    background-size: cover;
+    position: absolute;
+    top: 41%;
+    left: 36.5%;
+    transform: translate(-50%, -50%);
+}
+
+#BG {
+    width: 100%;
+    height: 100%;
+    /* opacity: .5; */
     z-index: 0;
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 .TITLE {
     text-align: center;
+    width: 80%;
     position: absolute;
-    top: 30%;
-    left: 46%;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 8vh;
     color: white;
@@ -65,9 +78,10 @@ body {
 
 .ARTIST {
     text-align: center;
+    width: 80%;
     position: absolute;
-    top: 55%;
-    left: 46%;
+    top: 65%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vh;
     color: white;
@@ -78,10 +92,11 @@ body {
     margin: 5%;
     height: 5vh;
     width: 5vh;
+    z-index: 8;
 }
 
 .CheckFORM {
-    z-index: 3;
+    z-index: 6;
     display: none;
     width: 80vw;
     height: 80vh;
@@ -93,8 +108,6 @@ body {
     color: whitesmoke;
     font-size: 10vh;
     font-family: VCR;
-    z-index: 3;
-
 }
 
 .show {
@@ -113,4 +126,14 @@ body {
     transform: translate(-50%, -50%);
     border: solid white 5px;
 
+}
+
+.box {
+    border: solid red 5px;
+    width: 67vw;
+    height: 84vh;
+    position: absolute;
+    top: 46%;
+    left: 37%;
+    transform: translate(-50%, -50%);
 }
