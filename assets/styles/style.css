@@ -35,7 +35,7 @@ body {
     z-index: 5;
     width: 240vw;
     height: 200vh;
-    opacity: .5;
+    opacity: .3;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -90,7 +90,7 @@ body {
 }
 
 .checks {
-    margin: 5%;
+    margin: 4%;
     height: 5vh;
     width: 5vh;
     z-index: 8;
@@ -107,7 +107,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0);
     color: whitesmoke;
-    font-size: 10vh;
+    font-size: 5vh;
     font-family: VCR;
 }
 
@@ -123,7 +123,7 @@ body {
     color: whitesmoke;
     position: absolute;
     top: 80%;
-    left: 44%;
+    left: 38%;
     transform: translate(-50%, -50%);
     border: solid white 5px;
 

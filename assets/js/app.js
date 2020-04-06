@@ -12,6 +12,8 @@ var BGsEL = document.querySelector("#BG");
 var songList1EL = document.querySelector("#songList1");
 var songList2EL = document.querySelector("#songList2");
 var songList3EL = document.querySelector("#songList3");
+var songList4EL = document.querySelector("#songList4");
+
 
 const BGs = 
 [
@@ -446,14 +448,57 @@ const songTITLES3 = [
         
 ];
 
+const songTITLES4 = [
+    {
+        title: "luckyhalfspeed theme",
+        artist: "lucky halfspeed"
+        },
+        {
+        title: "play for free",
+        artist: "robert Ledet"
+        },
+        {
+        title: "how long",
+        artist: "bob hall"
+        },
+        {
+        title: "new dress",
+        artist: "thomas edmonds"
+        },
+        {
+        title: "why are you laughing",
+        artist: "trent stokes"
+        },
+        {
+        title: "all that matters",
+        artist: "Robert Ledet"
+        },
+        {
+        title: "I think we killed santa",
+        artist: "luckyhalfspeed"
+        },
+        {
+        title: "this love is Halloween",
+        artist: "luckyhalfspeed"
+        },
+        {
+        title: "booty coming down",
+        artist: "luckyhalfspeed"
+        },
+        {
+        title: "beer and jesus",
+        artist: "dan was"
+        }
+        
+]
 const usedSongLISTs = ["songTITLES3", "songTITLES1", "songTITLES2"];
 
 spin = () => {
-  setTimeout(selector, 1000);
+  setTimeout(selector, 500);
 };
 
 var spinCOUNT = 0;
-var spinMAX = 10;
+var spinMAX = 14;
 
 selector = () => {
   var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
@@ -496,6 +541,13 @@ listMAKER = () => {
   if (songList3EL.checked === true) {
     for (let i = 0; i < songTITLES3.length; i++) {
       usedSongTITLES.push(songTITLES3[i]);
+    }
+  } else {
+    console.log("fail-3");
+  }
+  if (songList4EL.checked === true) {
+    for (let i = 0; i < songTITLES4.length; i++) {
+      usedSongTITLES.push(songTITLES4[i]);
     }
   } else {
     console.log("fail-3");

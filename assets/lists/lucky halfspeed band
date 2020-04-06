@@ -1,20 +1,40 @@
-“luckyhalfspeed theme”
-“lucky halfspeed”
-“play for free”
-“robert Ledet”
-“how long”
-“bob hall”
-“new dress”
-“thomas edmonds”
-“why are you laughing”
-“trent stokes”
-“all that matters”
-“Robert Ledet”
-“I think we killed santa”
-“luckyhalfspeed”
-“this love is Halloween” 
-“luckyhalfspeed
-“booty coming down”
-“luckyhalfspeed”
-“beer and jesus”
-“dan was”
+{
+title: "luckyhalfspeed theme",
+artist: "lucky halfspeed"
+}
+{
+title: "play for free",
+artist: "robert Ledet"
+}
+{
+title: "how long",
+artist: "bob hall"
+}
+{
+title: "new dress",
+artist: "thomas edmonds"
+}
+{
+title: "why are you laughing",
+artist: "trent stokes"
+}
+{
+title: "all that matters",
+artist: "Robert Ledet"
+}
+{
+title: "I think we killed santa",
+artist: "luckyhalfspeed"
+}
+{
+title: "this love is Halloween",
+artist: "luckyhalfspeed
+}
+{
+title: "booty coming down",
+artist: "luckyhalfspeed"
+}
+{
+title: "beer and jesus",
+artist: "dan was"
+}
