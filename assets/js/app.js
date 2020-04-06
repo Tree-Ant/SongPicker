@@ -944,7 +944,7 @@ const songTITLES5 = [
 const usedSongLISTs = ["songTITLES3", "songTITLES1", "songTITLES2"];
 
 spin = () => {
-  setTimeout(selector, 250);
+  setTimeout(selector, 100);
 };
 
 var spinCOUNT = 0;
