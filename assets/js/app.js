@@ -456,7 +456,7 @@ var spinCOUNT = 0;
 var spinMAX = 10;
 
 selector = () => {
-  var songPICK = Math.floor(Math.random() * 6);
+  var songPICK = Math.floor(Math.random() * usedSongTITLES.length);
   randomNUMEL.innerHTML = songPICK;
 
   titleEL.innerHTML = usedSongTITLES[songPICK].title;
