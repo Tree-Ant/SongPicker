@@ -139,7 +139,7 @@ body {
 }
 
 .box {
-    border: solid red 5px;
+    /* border: solid red 5px; */
     width: 60vw;
     height: 84vh;
     position: absolute;
